@@ -461,7 +461,7 @@ class Simulator:
         if initial_state is not None:
             initial_state = initial_state[0:len(initial_state)//2]
         session_token, self.live_url = self.c.start_experiment(
-            user_token, experiment_type, tf, preparation_time = preparation_time, record=record, initial_state=initial_state
+            user_token, experiment_type, tf, preparation_time = preparation_time, record=record, initial_position=initial_state
         )
         print("Your session token is:", session_token)
 
